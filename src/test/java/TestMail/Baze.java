@@ -20,8 +20,9 @@ public class Baze {
 
     @BeforeTest
     public void beforeT() {
+
         ChromeOptions options = new ChromeOptions();
-        options.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
+       options.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
         System.setProperty("webdriver.chrome.driver","C:\\ggr tool\\selenoid\\chromedriver.exe");
         driver = new ChromeDriver(options);
         DesiredCapabilities dc = DesiredCapabilities.chrome();
