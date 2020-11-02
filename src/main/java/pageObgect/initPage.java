@@ -21,7 +21,7 @@ public class initPage extends BaseClass {
         click("//span[@class='mail-ComposeButton-Text' and contains(., 'Написать')]");
     }
 
-@Step("кликаем на сообщение с темой тестовая тема")
+    @Step("кликаем на сообщение с темой тестовая тема")
     public void clickLetterSubject(){
         click(".//span[@title='Тестовая тема']");
     }
@@ -58,27 +58,22 @@ public class initPage extends BaseClass {
     }
 
 
-            @Step("кликаем на кнопку с настройками")
+    @Step("кликаем на кнопку с настройками")
     public void clickButtonSetting(){
         click("(//button [@data-lego='react' ])[2]");
     }
-                    @Step("кликаем на кнопку с основными настройками")
+    @Step("кликаем на кнопку с основными настройками")
     public void clickBasicsSttings(){
         click("//span[@class='mail-SettingsPopup__menu-item-content' and contains(., 'Личные данные, подпись, портрет')]");
     }
-                            @Step("кликаем на кнопку добавить подпись")
+    @Step("кликаем на кнопку добавить подпись")
     public void clickAddSignature(){
         click("//span[@class='ui-button-text']");
     }
-                                    @Step("кликаем на кнопку Почта")
+    @Step("кликаем на кнопку Почта")
     public void clickReturnToMail(){
         click("(//a[@href='#inbox'])[2]");
     }
-
-
-
-
-
 
     @Step("Вводим подпись в строку с настройками подписи.")
     public void setSignature(String text) {

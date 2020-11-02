@@ -3,7 +3,7 @@
 <suite name="Mail" verbose="1">
     <test name="Nopackage">
         <classes>
-            <class name="TestMail"/>
+            <class name="TestMail.TesttingMail"/>
         </classes>
     </test>
 
