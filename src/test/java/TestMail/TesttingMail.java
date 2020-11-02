@@ -35,7 +35,7 @@ public class TesttingMail extends Baze {
         ms.clickSendMessage();
         driver.navigate().refresh();
 
-        Thread.sleep(3000);
+        Thread.sleep(10000);
         a.assertTrue(findElement(By.xpath("//span[@title='Тестовая тема']")));
         in.clickLetterSubject();
         in.clickFirstMessage();
